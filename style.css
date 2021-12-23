@@ -150,6 +150,10 @@ section {
 
     nav {
         padding: 0 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        top: unset;
     }
 
     nav ul a svg {
