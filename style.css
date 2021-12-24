@@ -88,6 +88,7 @@ nav {
     position: sticky;
     top: 0;
     background: var(--bg-dark);
+    z-index: 99;
 }
 
 nav ul {
@@ -125,6 +126,7 @@ nav ul a svg {
 .about-me .img-container img {
     width: 70%;
     height: 100%;
+    object-fit: cover;
 }
 
 .about-me .img-container .line {
@@ -155,6 +157,23 @@ nav ul a svg {
     nav {
         padding: 0 30px;
     }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me .container, .about-me .img-container {
+        width: 100%;
+    }
+
+    .about-me .container {
+        padding-right: 0;
+    }
+
+    .about-me .img-container {
+        margin: 70px 0;
+    }
+
 }
 
 /*TABLET*/
@@ -198,5 +217,9 @@ nav ul a svg {
 
     nav ul a {
         font-size: 12px;
+    }
+
+    .about-me {
+        padding: 40px;
     }
 }
